@@ -99,7 +99,6 @@ SRCS += \
   ../watch_faces/settings/finetune_face.c \
   ../watch_faces/complication/databank_face.c \
   ../watch_faces/complication/tempchart_face.c \
-  ../watch_faces/complication/tally_face.c \
   ../watch_faces/complication/tarot_face.c \
   ../watch_faces/complication/morsecalc_face.c \
   ../watch_faces/complication/rpn_calculator_face.c \
