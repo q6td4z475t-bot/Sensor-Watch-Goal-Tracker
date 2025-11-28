@@ -27,7 +27,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "watch.h"
-#include "watch_faces/tally_face/tally_face.h"
 
 // Movement Preferences
 // These four 32-bit structs store information about the wearer and their preferences. Tentatively, the plan is
