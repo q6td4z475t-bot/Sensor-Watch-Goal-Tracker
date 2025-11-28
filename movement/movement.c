@@ -100,6 +100,22 @@
 #endif
 
 movement_state_t movement_state;
+
+/* Defined here and initialized at runtime to avoid constant-expression issues */
+watch_face_t watch_faces[MOVEMENT_NUM_FACES];
+
+static void movement_init_faces(void) {
+    watch_faces[0] = simple_clock_face;
+    watch_faces[1] = goal_tracker_face;
+    watch_faces[2] = world_clock_face;
+    watch_faces[3] = sunrise_sunset_face;
+    watch_faces[4] = moon_phase_face;
+    watch_faces[5] = stopwatch_face;
+    watch_faces[6] = preferences_face;
+    watch_faces[7] = set_time_face;
+    watch_faces[8] = thermistor_readout_face;
+}
+
 void * watch_face_contexts[MOVEMENT_NUM_FACES];
 watch_date_time scheduled_tasks[MOVEMENT_NUM_FACES];
 const int32_t movement_le_inactivity_deadlines[8] = {INT_MAX, 600, 3600, 7200, 21600, 43200, 86400, 604800};
