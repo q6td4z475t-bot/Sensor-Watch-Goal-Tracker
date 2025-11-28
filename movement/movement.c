@@ -430,6 +430,8 @@ void app_init(void) {
 
     filesystem_init();
 
+    movement_init_faces();
+    
 #if __EMSCRIPTEN__
     int32_t time_zone_offset = EM_ASM_INT({
         return -new Date().getTimezoneOffset();
