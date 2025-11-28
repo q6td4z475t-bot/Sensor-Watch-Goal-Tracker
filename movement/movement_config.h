@@ -27,19 +27,10 @@
 
 #include "movement_faces.h"
 
-watch_face_t watch_faces[] = {
-    { simple_clock_face_setup,
-      simple_clock_face_activate,
-      simple_clock_face_loop,
-      simple_clock_face_resign,
-      simple_clock_face_wants_background_task },
-
-    { world_clock_face_setup,
-      world_clock_face_activate,
-      world_clock_face_loop,
-      world_clock_face_resign,
-      NULL },
-
+const watch_face_t watch_faces[] = {
+    simple_clock_face,
+    goal_tracker_face,
+    world_clock_face,
     sunrise_sunset_face,
     moon_phase_face,
     stopwatch_face,
