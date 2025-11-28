@@ -4,11 +4,11 @@
 // Tally face for Sensor Watch Pro (upgraded LCD).
 // See tally_face.h for function prototypes.
 
-#include "tally_face.h"
+#include "movement.h"
 #include "watch.h"
+#include "tally_face.h"
 #include "watch_private_display.h"
 #include "lis2dw.h"
-#include "movement.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
