@@ -29,7 +29,6 @@
 
 const watch_face_t watch_faces[] = {
     simple_clock_face,
-    { tally_face_setup, tally_face_activate, tally_face_loop, tally_face_resign, NULL },
     world_clock_face,
     sunrise_sunset_face,
     moon_phase_face,
