@@ -27,7 +27,7 @@
 
 #include "movement_faces.h"
 
-const watch_face_t watch_faces[] = {
+watch_face_t watch_faces[] = {
     simple_clock_face,
     world_clock_face,
     sunrise_sunset_face,
