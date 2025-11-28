@@ -2,6 +2,7 @@
 #define TALLY_FACE_H
 
 #include "movement.h"
+#include "movement_config.h"
 #include "watch.h"
 #include <stdbool.h>
 #include <stdint.h>
