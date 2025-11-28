@@ -27,20 +27,10 @@
 
 #include "movement_faces.h"
 
-const watch_face_t watch_faces[] = {
-    simple_clock_face,
-    goal_tracker_face,
-    world_clock_face,
-    sunrise_sunset_face,
-    moon_phase_face,
-    stopwatch_face,
-    preferences_face,
-    set_time_face,
-    thermistor_readout_face,
-    voltage_face
-};
+/* watch_faces is defined and filled at runtime in movement.c */
+extern watch_face_t watch_faces[];
 
-#define MOVEMENT_NUM_FACES (sizeof(watch_faces) / sizeof(watch_face_t))
+#define MOVEMENT_NUM_FACES 9
 
 /* Determines what face to go to from the first face on long press of the Mode button.
  * Also excludes these faces from the normal rotation.
