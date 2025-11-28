@@ -1,11 +1,12 @@
 #ifndef TALLY_FACE_H
 #define TALLY_FACE_H
 
-#include "movement.h"
-#include "movement_config.h"
-#include "watch.h"
 #include <stdbool.h>
 #include <stdint.h>
+
+/* forward declarations so we can use these types */
+typedef struct movement_settings_t movement_settings_t;
+typedef struct movement_event_t    movement_event_t;
 
 /* Movement v2 watch face API */
 void tally_face_setup(movement_settings_t *settings, uint8_t watch_face_index, void **context_ptr);
