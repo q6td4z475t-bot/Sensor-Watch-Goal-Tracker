@@ -26,6 +26,7 @@
 #define MOVEMENT_FACES_H_
 
 #include "simple_clock_face.h"
+#include "watch_faces/tally_face/tally_face.h"
 #include "close_enough_clock_face.h"
 #include "clock_face.h"
 #include "world_clock_face.h"
