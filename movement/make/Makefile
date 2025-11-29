@@ -11,6 +11,7 @@ include $(TOP)/make.mk
 INCLUDES += \
   -I../ \
   -I../watch_faces/ \
+  -I../watch_faces/tally_face/ \
   -I../watch_faces/clock/ \
   -I../watch_faces/settings/ \
   -I../watch_faces/complication/ \
