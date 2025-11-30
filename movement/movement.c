@@ -104,17 +104,18 @@ movement_state_t movement_state;
 /* Defined here and initialized at runtime to avoid constant-expression issues */
 watch_face_t watch_faces[MOVEMENT_NUM_FACES];
 
-static void movement_init_faces(void) {
-    watch_faces[0] = simple_clock_face;
-    watch_faces[1] = goal_tracker_face;
-    watch_faces[2] = world_clock_face;
-    watch_faces[3] = sunrise_sunset_face;
-    watch_faces[4] = moon_phase_face;
-    watch_faces[5] = stopwatch_face;
-    watch_faces[6] = preferences_face;
-    watch_faces[7] = set_time_face;
-    watch_faces[8] = thermistor_readout_face;
-}
+watch_face_t watch_faces[] = {
+    simple_clock_face,
+    goal_tracker_face,
+    world_clock_face,
+    sunrise_sunset_face,
+    moon_phase_face,
+    stopwatch_face,
+    preferences_face,
+    set_time_face,
+    thermistor_readout_face,
+    voltage_face,       // ← your custom face added here
+};d
 
 void * watch_face_contexts[MOVEMENT_NUM_FACES];
 watch_date_time scheduled_tasks[MOVEMENT_NUM_FACES];
