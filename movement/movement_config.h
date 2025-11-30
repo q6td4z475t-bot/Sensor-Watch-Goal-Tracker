@@ -30,7 +30,7 @@
 /* watch_faces is defined and filled at runtime in movement.c */
 extern watch_face_t watch_faces[];
 
-#define MOVEMENT_NUM_FACES 9
+#define MOVEMENT_NUM_FACES 10
 
 /* Determines what face to go to from the first face on long press of the Mode button.
  * Also excludes these faces from the normal rotation.
